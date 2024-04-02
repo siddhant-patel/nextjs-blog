@@ -25,7 +25,7 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Project 3",
+    title: "Social Distancing and Face Mask Detection",
     description: "The project aims to create a real-time system on the Jetson Nano board for face mask detection and social distancing monitoring using Deep Learning techniques. By optimizing algorithms and implementing features like threading and data augmentation, the system enhances accuracy and performance for crowded environments, addressing challenges in model design and hardware/software setup for future advancements in object detection and Computer Vision.",
     image: "/images/jetsonNano.png",
     tag: ["All", "Web"],
@@ -34,9 +34,9 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Project 4",
-    description: "Project 4 description",
-    image: "",
+    title: "E-Voting on Ethereum",
+    description: "E-Voting on Ethereum is a blockchain-based voting system revolutionizing traditional electoral processes. Powered by Ethereum's smart contracts, it facilitates secure voting, transparent result viewing, and seamless user interaction. With a user-friendly frontend and Truffle for development, the system ensures reliability and integrity. Installation involves cloning the repository, installing dependencies, configuring Truffle, and deploying contracts. Thorough testing is prioritized for compatibility and security, aiming to provide a trustworthy platform for transparent elections.",
+    image: "/images/evoting.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
@@ -96,7 +96,7 @@ const ProjectsSection = () => {
         isSelected={tag === "Mobile"}
       />
       </div>
-      <div className="grid md:grid-cols-3 gap-8 md:gap-12 mt-4">
+      <div className="grid md:grid-cols-3 gap-8 md:gap-12 mt-4 text-justify">
           {filteredProjects.map((project) => (
             <ProjectCard 
                 key={project.id} 
